@@ -1,0 +1,16 @@
+C:\Users\Admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\bin\Debug\AutoupdaterHost.exe.config
+C:\Users\Admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\bin\Debug\AutoupdaterHost.exe
+C:\Users\Admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\bin\Debug\AutoupdaterHost.pdb
+C:\Users\Admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\bin\Debug\AutoupdaterService.dll
+C:\Users\Admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\bin\Debug\AutoupdaterService.pdb
+C:\Users\Admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\obj\Debug\AutoupdaterHost.csprojResolveAssemblyReference.cache
+C:\Users\Admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\obj\Debug\AutoupdaterHost.exe
+C:\Users\Admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\obj\Debug\AutoupdaterHost.pdb
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.exe
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.pdb
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.pdb
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.exe
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.pdb
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.exe.config

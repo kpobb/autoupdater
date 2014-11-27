@@ -1,0 +1,8 @@
+c:\users\admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\bin\Debug\Autoupdater.exe.config
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\Autoupdater\bin\Debug\Autoupdater.exe
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\Autoupdater\bin\Debug\Autoupdater.pdb
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\Autoupdater\obj\Debug\Autoupdater.exe
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\Autoupdater\obj\Debug\Autoupdater.pdb
+C:\Users\Admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\bin\Debug\AutoupdaterService.dll
+C:\Users\Admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\bin\Debug\AutoupdaterService.pdb
+C:\Users\Admin\documents\visual studio 2013\Projects\Autoupdater\Autoupdater\obj\Debug\Autoupdater.csprojResolveAssemblyReference.cache
