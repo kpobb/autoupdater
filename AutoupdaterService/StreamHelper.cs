@@ -25,8 +25,17 @@ namespace AutoupdaterService
             {
                 stream.CopyTo(memoryStream);
 
+                stream.Dispose();
+
                 return memoryStream.ToArray();
             }
+        }
+
+        public static byte[] ConvertToBytes(string filePath)
+        {
+            var file = File.OpenRead(filePath);
+
+            return ConvertToBytes(file);
         }
     }
 }

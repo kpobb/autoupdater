@@ -3,8 +3,10 @@ using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using System.Reflection;
 using System.ServiceModel;
 using AutoupdaterService;
+using AutoupdaterService.Entities;
 
 namespace AutoupdaterClient
 {
@@ -12,33 +14,53 @@ namespace AutoupdaterClient
     {
         static void Main()
         {
-            var binder = new BasicHttpBinding { MaxReceivedMessageSize = 3145728 };
-            var factory = new ChannelFactory<IAutoupdaterService>(binder, "http://localhost:1989");
-            var service = factory.CreateChannel();
+            AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
 
             try
             {
-                var response = service.UpdateApplication(new ServiceRequest { AppId = "BwinScriptUpdater" });
+                var response = ExecuteUpdate();
 
                 ExtractZipFile(response, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "new"));
-
-                response.FileStream.Dispose();
 
                 SelfUpdateApplication(AppDomain.CurrentDomain.BaseDirectory,
                     Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "new"), "AutoupdaterClient.exe");
             }
-            catch { }
+            // ReSharper disable once EmptyGeneralCatchClause
+            catch
+            { 
+            }
 
-            //  Console.ReadKey();
+            Console.WriteLine("Click any buttons..");
+            Console.ReadKey();
+        }
+
+        private static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AutoupdaterClient.lib.AutoupdaterService.dll"))
+            {
+                // ReSharper disable once PossibleNullReferenceException
+                var assemblyData = new byte[stream.Length];
+
+                stream.Read(assemblyData, 0, assemblyData.Length);
+
+                return Assembly.Load(assemblyData);
+            }
+        }
+
+        private static ServiceResponse ExecuteUpdate()
+        {
+            var binder = new BasicHttpBinding { MaxReceivedMessageSize = 3145728 };
+            var factory = new ChannelFactory<IAutoupdaterService>(binder, "http://localhost:1989");
+            var service = factory.CreateChannel();
+
+            return service.UpdateApplication("BwinScriptUpdater");
         }
 
         private static void ExtractZipFile(ServiceResponse response, string destPath)
         {
             var tempPath = Path.Combine(Path.GetTempPath(), response.ApplicationName);
 
-            var bytes = StreamHelper.ConvertToBytes(response.FileStream);
-
-            File.WriteAllBytes(tempPath, bytes);
+            File.WriteAllBytes(tempPath, response.File);
 
             var dirInfo = new DirectoryInfo(destPath);
 

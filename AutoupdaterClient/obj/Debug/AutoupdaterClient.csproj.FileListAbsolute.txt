@@ -7,3 +7,8 @@ C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterClie
 C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.exe
 C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.pdb
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.exe.config
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.exe
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.pdb
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.exe
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.pdb

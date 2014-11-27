@@ -8,3 +8,9 @@ C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterServ
 C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.pdb
 C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.dll.config
 C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.csprojResolveAssemblyReference.cache
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.dll.config
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.dll
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.pdb
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.csprojResolveAssemblyReference.cache
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.dll
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.pdb

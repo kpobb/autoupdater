@@ -14,3 +14,11 @@ C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost
 C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.exe
 C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.pdb
 C:\Users\Admin\Documents\Visual Studio 2013\Projects\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.exe.config
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.exe.config
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.exe
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.pdb
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.exe
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.pdb
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.dll
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.pdb
+D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.csprojResolveAssemblyReference.cache
