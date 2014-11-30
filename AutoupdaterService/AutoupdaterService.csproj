@@ -46,9 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoupdaterService.cs" />
+    <Compile Include="Entities\FileData.cs" />
     <Compile Include="IAutoupdaterService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Entities\ServiceResponse.cs" />
+    <Compile Include="Entities\UpdateResponse.cs" />
     <Compile Include="StreamHelper.cs" />
   </ItemGroup>
   <ItemGroup>

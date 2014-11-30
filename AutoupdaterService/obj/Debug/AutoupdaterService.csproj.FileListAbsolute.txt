@@ -14,3 +14,9 @@ D:\Projects\Work\Bwin\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterServic
 D:\Projects\Work\Bwin\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.csprojResolveAssemblyReference.cache
 D:\Projects\Work\Bwin\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.dll
 D:\Projects\Work\Bwin\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.pdb
+D:\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.dll.config
+D:\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.dll
+D:\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.pdb
+D:\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.csprojResolveAssemblyReference.cache
+D:\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.dll
+D:\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.pdb

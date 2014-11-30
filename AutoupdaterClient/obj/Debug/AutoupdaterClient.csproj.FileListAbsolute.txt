@@ -12,3 +12,11 @@ D:\Projects\Work\Bwin\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.
 D:\Projects\Work\Bwin\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.pdb
 D:\Projects\Work\Bwin\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.exe
 D:\Projects\Work\Bwin\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.pdb
+D:\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.exe.config
+D:\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.exe
+D:\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.pdb
+D:\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.csprojResolveAssemblyReference.cache
+D:\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.exe
+D:\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.pdb
+D:\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterService.dll
+D:\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterService.pdb

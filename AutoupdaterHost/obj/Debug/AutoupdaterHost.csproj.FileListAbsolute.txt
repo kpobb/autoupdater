@@ -22,3 +22,11 @@ D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.pdb
 D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.dll
 D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.pdb
 D:\Projects\Work\Bwin\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.csprojResolveAssemblyReference.cache
+D:\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.exe.config
+D:\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.exe
+D:\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.pdb
+D:\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.exe
+D:\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.pdb
+D:\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.dll
+D:\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.pdb
+D:\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.csprojResolveAssemblyReference.cache

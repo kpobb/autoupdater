@@ -7,6 +7,8 @@ namespace AutoupdaterService
     public interface IAutoupdaterService
     {
         [OperationContract]
-        ServiceResponse UpdateApplication(string applicationId);
+        UpdateResponse UpdateApplication(string applicationId);
+    
+    
     }
 }

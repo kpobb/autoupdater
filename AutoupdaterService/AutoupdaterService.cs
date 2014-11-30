@@ -2,6 +2,7 @@
 using System.IO;
 using System.IO.Compression;
 using System.ServiceModel;
+using System.Text.RegularExpressions;
 using AutoupdaterService.Entities;
 
 namespace AutoupdaterService
@@ -9,9 +10,14 @@ namespace AutoupdaterService
     [ServiceBehavior(AddressFilterMode = AddressFilterMode.Any)]
     public class AutoupdaterService : IAutoupdaterService
     {
-        public ServiceResponse UpdateApplication(string applicationId)
+        public UpdateResponse UpdateApplication(string applicationId)
         {
             var applicationRoot = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Tools", applicationId);
+
+            if (!Regex.IsMatch(applicationId, "a-zA-Z0-9") && !Directory.Exists(applicationRoot))
+            {
+                throw new Exception("Application was not found.");
+            }
 
             var tempPath = Path.Combine(Path.GetTempPath(), Guid.NewGuid() + ".zip");
 
@@ -21,11 +27,11 @@ namespace AutoupdaterService
             }
             catch { }
 
-            var response = ServiceResponse.Create(tempPath, applicationId);
+            var response = new UpdateResponse(applicationId, tempPath);
 
             File.Delete(tempPath);
 
             return response;
-        }       
+        }
     }
 }
