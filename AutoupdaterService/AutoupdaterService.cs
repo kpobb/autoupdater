@@ -12,12 +12,7 @@ namespace AutoupdaterService
     {
         public UpdateResponse UpdateApplication(string applicationId)
         {
-            var applicationRoot = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Tools", applicationId);
-
-            if (!Regex.IsMatch(applicationId, "a-zA-Z0-9") && !Directory.Exists(applicationRoot))
-            {
-                throw new Exception("Application was not found.");
-            }
+            var applicationRoot = GetApplicationDirectory(applicationId);
 
             var tempPath = Path.Combine(Path.GetTempPath(), Guid.NewGuid() + ".zip");
 
@@ -32,6 +27,18 @@ namespace AutoupdaterService
             File.Delete(tempPath);
 
             return response;
+        }
+
+        private string GetApplicationDirectory(string applicationId)
+        {
+            var applicationRoot = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Tools", applicationId);
+
+            if (!Regex.IsMatch(applicationId, "a-zA-Z0-9") && !Directory.Exists(applicationRoot))
+            {
+                throw new Exception("Application was not found.");
+            }
+
+            return applicationRoot;
         }
     }
 }
