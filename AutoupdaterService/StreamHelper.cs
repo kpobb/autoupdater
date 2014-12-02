@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using AutoupdaterService.Entities;
 
 namespace AutoupdaterService
 {

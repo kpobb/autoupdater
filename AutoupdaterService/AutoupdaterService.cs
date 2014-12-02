@@ -3,7 +3,9 @@ using System.IO;
 using System.IO.Compression;
 using System.ServiceModel;
 using System.Text.RegularExpressions;
+using System.Xml;
 using AutoupdaterService.Entities;
+using AutoupdaterService.Extensions;
 
 namespace AutoupdaterService
 {
@@ -29,6 +31,16 @@ namespace AutoupdaterService
             return response;
         }
 
+        public bool HasUpdates(string applicationId, Version version)
+        {
+            var app = ParseConfig(applicationId);
+
+            if (app == null)
+                return false;
+
+            return app.Version > version;
+        }
+
         private string GetApplicationDirectory(string applicationId)
         {
             var applicationRoot = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Tools", applicationId);
@@ -39,6 +51,36 @@ namespace AutoupdaterService
             }
 
             return applicationRoot;
+        }
+
+        private static ApplicationXml ParseConfig(string applicationId)
+        {
+            var configPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "update.xml");
+
+            var doc = new XmlDocument();
+            doc.Load(configPath);
+
+            var root = doc.DocumentElement;
+
+            if (root == null)
+            {
+                return null;
+            }
+
+            var node = root.SelectSingleNode("/Applications/Application[Id='" + applicationId + "']");
+
+            if (node == null)
+            {
+                return null;
+            }
+
+            return new ApplicationXml
+            {
+                Id = node.GetValueOrDefault("Id"),
+                Name = node.GetValueOrDefault("Name"),
+                Path = node.GetValueOrDefault("Path"),
+                Version = Version.Parse(node.GetValueOrDefault("Version", "0.0.0"))
+            };
         }
     }
 }

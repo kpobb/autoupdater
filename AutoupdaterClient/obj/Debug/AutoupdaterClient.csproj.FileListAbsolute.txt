@@ -20,3 +20,11 @@ D:\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.exe
 D:\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.pdb
 D:\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterService.dll
 D:\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterService.pdb
+D:\Programs\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.exe.config
+D:\Programs\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.exe
+D:\Programs\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.pdb
+D:\Programs\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.exe
+D:\Programs\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterClient.pdb
+D:\Programs\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterService.dll
+D:\Programs\Autoupdater\AutoupdaterClient\bin\Debug\AutoupdaterService.pdb
+D:\Programs\Autoupdater\AutoupdaterClient\obj\Debug\AutoupdaterClient.csprojResolveAssemblyReference.cache

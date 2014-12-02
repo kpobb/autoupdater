@@ -7,6 +7,11 @@ namespace AutoupdaterClient
     {
         public static void Update(string destPath, string applicationName)
         {
+            if (string.IsNullOrWhiteSpace(applicationName))
+            {
+                return;
+            }
+
             var cmd = new Process
             {
                 StartInfo =

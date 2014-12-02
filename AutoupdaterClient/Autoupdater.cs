@@ -6,11 +6,11 @@ namespace AutoupdaterClient
 {
     public class Autoupdater
     {
-        private readonly IUpdatable _application;
+        private readonly IUpdatableApplication _application;
         private readonly ZipExtractor _zip;
         private readonly IAutoupdaterService _autoupdaterService;
 
-        public Autoupdater(IUpdatable application)
+        public Autoupdater(IUpdatableApplication application)
         {
             _application = application;
             _zip = new ZipExtractor();
@@ -22,18 +22,28 @@ namespace AutoupdaterClient
 
         public bool HasUpdates()
         {
-            return false;
+            return _autoupdaterService.HasUpdates(_application.Id, _application.Version);
         }
 
         public void Update()
         {
-            var response = _autoupdaterService.UpdateApplication(_application.ApplicationId);
+            var response = _autoupdaterService.UpdateApplication(_application.Id);
 
-            var destDir = Path.Combine(_application.ApplicationPath, "new");
+            var destDir = Path.Combine(_application.Path, "new");
 
             _zip.Extract(response.FileData.Bytes, destDir, response.FileData.Name);
 
-            SelfUpdator.Update(destDir, _application.ApplicationName);
+            SelfUpdator.Update(destDir, _application.Name);
+
+            Directory.Delete(destDir);
+        }
+
+        public void ForceUpdate()
+        {
+            if (HasUpdates())
+            {
+                Update();
+            }
         }
     }
 }

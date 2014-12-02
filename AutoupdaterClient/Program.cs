@@ -1,16 +1,15 @@
 ﻿using System;
-
 namespace AutoupdaterClient
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             try
             {
                 var test = new TestApp();
                 var updater = new Autoupdater(test);
-                updater.Update();
+                updater.ForceUpdate();
             }
             // ReSharper disable once EmptyGeneralCatchClause
             catch
@@ -21,39 +20,35 @@ namespace AutoupdaterClient
             Console.ReadKey();
         }
 
-    }
-
-    public class TestApp : IUpdatable
-    {
-        public string ApplicationId
+        public class TestApp : IUpdatableApplication
         {
-            get { return "BwinScriptUpdater"; }
-        }
-
-        public string ApplicationName
-        {
-            get { return ""; }
-        }
-
-        public string ApplicationPath
-        {
-            get { return AppDomain.CurrentDomain.BaseDirectory; }
-        }
-
-        public Version ApplicationVersion
-        {
-            get
+            public string Id
             {
-                return new Version(1,1);
+                get { return "BwinScriptUpdater"; }
+            }
+
+            public string Name
+            {
+                get { return ""; }
+            }
+
+            public string Path
+            {
+                get { return AppDomain.CurrentDomain.BaseDirectory; }
+            }
+
+            public Version Version
+            {
+                get { return new Version(1, 1); }
             }
         }
     }
 
-    public interface IUpdatable
+    public interface IUpdatableApplication
     {
-        string ApplicationId { get; }
-        string ApplicationName { get; }
-        string ApplicationPath { get; }
-        Version ApplicationVersion { get; }
+        string Id { get; }
+        string Name { get; }
+        string Path { get; }
+        Version Version { get; }
     }
 }
