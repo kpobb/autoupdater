@@ -20,7 +20,6 @@ namespace CodeFiscaleGenerator
             Name = "CodeFiscaleGenerator.exe";
 
             var updater = new AutoupdaterHandler(this);
-            updater.Update();
 
             // Fix trust relationship for the SSL/TLS secure channel
             ServicePointManager.ServerCertificateValidationCallback = delegate

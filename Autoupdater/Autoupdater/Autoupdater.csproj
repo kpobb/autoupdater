@@ -32,10 +32,12 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +47,12 @@
   <ItemGroup>
     <Compile Include="AutoupdaterHandler.cs" />
     <Compile Include="IUpdatableTool.cs" />
+    <Compile Include="AutoupdaterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoupdaterForm.Designer.cs">
+      <DependentUpon>AutoupdaterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelfExtractor.cs" />
     <Compile Include="Service References\AutoupdaterService\Reference.cs">
@@ -93,6 +101,11 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AutoupdaterForm.resx">
+      <DependentUpon>AutoupdaterForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
