@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using AutoupdaterService.Entities;
 using AutoupdaterService.Extensions;
+using File = System.IO.File;
 
 namespace AutoupdaterService
 {
@@ -22,7 +23,10 @@ namespace AutoupdaterService
             {
                 ZipFile.CreateFromDirectory(applicationRoot, tempPath);
             }
-            catch { }
+            // ReSharper disable once EmptyGeneralCatchClause
+            catch
+            {
+            }
 
             var response = new UpdateResponse(applicationId, tempPath);
 
@@ -31,7 +35,7 @@ namespace AutoupdaterService
             return response;
         }
 
-        public bool HasUpdates(string applicationId, Version version)
+        public bool HasUpdate(string applicationId, Version version)
         {
             var app = ParseConfig(applicationId);
 
@@ -43,14 +47,14 @@ namespace AutoupdaterService
 
         private string GetApplicationDirectory(string applicationId)
         {
-            var applicationRoot = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Tools", applicationId);
+            var app = ParseConfig(applicationId);
 
-            if (!Regex.IsMatch(applicationId, "a-zA-Z0-9") && !Directory.Exists(applicationRoot))
+            if (!Regex.IsMatch(applicationId, "a-zA-Z0-9") && !Directory.Exists(app.Path))
             {
                 throw new Exception("Application was not found.");
             }
 
-            return applicationRoot;
+            return app.Path;
         }
 
         private static ApplicationXml ParseConfig(string applicationId)

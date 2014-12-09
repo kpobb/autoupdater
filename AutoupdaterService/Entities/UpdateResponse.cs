@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Runtime.Serialization;
+using AutoupdaterService.Helpers;
 
 namespace AutoupdaterService.Entities
 {
@@ -10,9 +11,9 @@ namespace AutoupdaterService.Entities
         {
             ApplicationId = applicationId;
 
-            FileData = new FileData
+            File = new File
             {
-                Bytes = StreamHelper.ConvertToBytes(filePath),
+                Source = StreamHelper.ConvertToBytes(filePath),
                 Name = Path.GetFileName(filePath),
             };
         }
@@ -21,6 +22,6 @@ namespace AutoupdaterService.Entities
         public string ApplicationId { get; private set; }
 
         [DataMember]
-        public FileData FileData { get; private set; } 
+        public File File { get; private set; } 
     }
 }

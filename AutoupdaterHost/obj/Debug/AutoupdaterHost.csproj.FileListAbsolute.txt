@@ -38,3 +38,11 @@ D:\Programs\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.pdb
 D:\Programs\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.dll
 D:\Programs\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.pdb
 D:\Programs\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.csprojResolveAssemblyReference.cache
+D:\Projects\Home\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.exe.config
+D:\Projects\Home\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.exe
+D:\Projects\Home\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterHost.pdb
+D:\Projects\Home\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.dll
+D:\Projects\Home\Autoupdater\AutoupdaterHost\bin\Debug\AutoupdaterService.pdb
+D:\Projects\Home\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.csprojResolveAssemblyReference.cache
+D:\Projects\Home\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.exe
+D:\Projects\Home\Autoupdater\AutoupdaterHost\obj\Debug\AutoupdaterHost.pdb

@@ -11,6 +11,6 @@ namespace AutoupdaterService
         UpdateResponse UpdateApplication(string applicationId);
 
         [OperationContract]
-        bool HasUpdates(string applicationId, Version version);
+        bool HasUpdate(string applicationId, Version version);
     }
 }

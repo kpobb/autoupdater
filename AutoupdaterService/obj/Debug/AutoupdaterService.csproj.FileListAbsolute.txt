@@ -26,3 +26,9 @@ D:\Programs\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.pdb
 D:\Programs\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.dll.config
 D:\Programs\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.dll
 D:\Programs\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.pdb
+D:\Projects\Home\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.dll.config
+D:\Projects\Home\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.dll
+D:\Projects\Home\Autoupdater\AutoupdaterService\bin\Debug\AutoupdaterService.pdb
+D:\Projects\Home\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.csprojResolveAssemblyReference.cache
+D:\Projects\Home\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.dll
+D:\Projects\Home\Autoupdater\AutoupdaterService\obj\Debug\AutoupdaterService.pdb

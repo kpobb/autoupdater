@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="413ee124-80c0-41a8-b07f-d54e1656447f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1989/Autoupdater.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Autoupdater.disco" MetadataType="Disco" ID="4d02e428-aed2-48a6-9cf0-5b186589b247" SourceId="1" SourceUrl="http://localhost:1989/Autoupdater.svc?disco" />
+    <MetadataFile FileName="Autoupdater.xsd" MetadataType="Schema" ID="11483060-fa28-412f-9f8a-e452dd042d3c" SourceId="1" SourceUrl="http://localhost:1989/Autoupdater.svc?xsd=xsd0" />
+    <MetadataFile FileName="Autoupdater1.xsd" MetadataType="Schema" ID="eb262e81-4697-44f4-bb1e-35247de34f7c" SourceId="1" SourceUrl="http://localhost:1989/Autoupdater.svc?xsd=xsd1" />
+    <MetadataFile FileName="Autoupdater2.xsd" MetadataType="Schema" ID="ebde62f7-8740-493b-a7ff-a7621a71ae94" SourceId="1" SourceUrl="http://localhost:1989/Autoupdater.svc?xsd=xsd2" />
+    <MetadataFile FileName="Autoupdater3.xsd" MetadataType="Schema" ID="433b7636-adff-4526-a60e-c12f5b18b519" SourceId="1" SourceUrl="http://localhost:1989/Autoupdater.svc?xsd=xsd3" />
+    <MetadataFile FileName="AutoupdaterService.wsdl" MetadataType="Wsdl" ID="4f006720-0782-4a87-953d-bdced146140b" SourceId="1" SourceUrl="http://localhost:1989/Autoupdater.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
